@@ -3,3 +3,20 @@ html{
     padding: 0;
     overflow-x: hidden;
 }
+
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+
+.bg-ocre{
+    background-color: rgb(242, 162, 44) !important;
+}
+
+.btn-instagram{ 
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: #fff !important;
+}
