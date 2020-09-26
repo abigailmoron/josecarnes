@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JosePremium</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a5f44d00fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-ocre">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/logocab.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mr-0 ml-auto">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Sucursales</a>
+                <a class="nav-link" href="#">Tienda Virtual</a>
+                <a class="nav-link" href="#">Mayoristas</a>
+                <a class="nav-link" href="#">Calculadora de Asado</a>
+                <a class="nav-link" href="#">Recetas</a>
+                <a class="nav-link" href="https://www.instagram.com/josecarnespremium/" target="_blank" class="btn btn-instagram btn-block">
+                    <i class="fab fa-instagram"></i> 
+                </a>
+                <a class="nav-link" href="https://www.facebook.com/jose.carnes.967" target="_blank" class="btn btn-primary btn-block">
+                    <i class="fab fa-facebook-f"></i> 
+                </a>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-12">
+                    <h1>Calculador de Asados</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form id="calculadorAsado">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="number" name="hombres" class="form-control" placeholder="Hombres">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="number" name="mujeres" class="form-control" placeholder="Mujeres">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="number" name="menores" class="form-control" placeholder="Menores de 12">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8 offset-md-2 my-5">
+                    <div class="row" id="items">
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Asado Surtido</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Chorizos y Morcillas</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Colita de Cuadril</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Achuras</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Costeleta</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Lechuga, tomate y cebolla</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Costilla común</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Pan</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Costilla Especial</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Vino</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Tapa de Asado</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Gaseosa o Agua</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Vacío</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Carbón</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Entraña</h5>                            
+                        </div>
+                        <div class="col-md-6 px-3 mb-md-3 border-bottom">
+                            <h5><span class="font-weight-bold">1 Kg</span>&nbsp;Marucha</h5>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-dark">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img src="imagenes/logocab.png" alt="Jose Carnes Premium" width="200" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-white">SUCURSALES</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Ramirez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">San Pedrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Alto Comedero - Feria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Alto Comedero - Fuerza Aerea</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-white">AYUDA</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Como comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Medios de pago</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Politica de Cambios y Devoluciones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-white">CONTACTANOS</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fa fa-whatsapp"></i>3884486745</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light rounded-circle" href="#"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-light rounded-circle" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-light rounded-circle" href="#"><i class="fa fa-envelope-o"></i></a>
+                    </li>
+                    <li class="nav-item mt-5">
+                        <a class="btn btn-outline-light" href="#">FRIGORIFICO</a>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/calculador.js"></script>
+</body>
+
+</html>
