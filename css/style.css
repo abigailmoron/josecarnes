@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .bg-ocre{
@@ -20,8 +20,16 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     color: #fff !important;
 }
-
+.nav-pills .nav-link{
+    color: #424242;
+}
 .nav-pills .nav-link.active{
     color: #fff;
     background-color: #424242;
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }

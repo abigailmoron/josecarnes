@@ -6,16 +6,52 @@ $(document).ready(function(){
 
 let productos = [
     {
-        'texto': 'Asado Surtido',
-        'cantidades': [3, 2, 1]
-    },
-    {
-        'texto': 'Chorizos y Morcillas',
+        'texto': 'Corte Americano',
         'cantidades': [1,0.5, 0.5]
     },
     {
-        'texto': 'Colita de Cuadril',
+        'texto': 'Costilla Comun',
         'cantidades': [1,0.5, 0.5]
+    },
+    {
+        'texto': 'Costilla Palomita',
+        'cantidades': [1,0.5, 0.5]
+    },
+    {
+        'texto': 'Entraña',
+        'cantidades': [3,2, 1]
+    },
+    {
+        'texto': 'Marucha',
+        'cantidades': [3,2.5, 1.5]
+    },
+    {
+        'texto': 'Matambre',
+        'cantidades': [2,1, 0.5]
+    },
+    {
+        'texto': 'Tapa de Asado',
+        'cantidades': [2,1, 0.5]
+    },
+    {
+        'texto': 'Tapa de Nalga',
+        'cantidades': [2,1, 0.5]
+    },
+    {
+        'texto': 'Vacio',
+        'cantidades': [2,1, 0.5]
+    },
+    {
+        'texto': 'Chorizo',
+        'cantidades': [1,0.5, 0.5]
+    },
+    {
+        'texto': 'Morcilla',
+        'cantidades': [1,0.5, 0.5]
+    },
+    {
+        'texto': 'Achuras',
+        'cantidades': [2,1, 0.5]
     },
 ];
 
