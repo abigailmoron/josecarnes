@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    calcular();
+    
     $('#calculadorAsado input').keyup(function(){
         calcular();
     });
@@ -51,6 +53,26 @@ let productos = [
     },
     {
         'texto': 'Achuras',
+        'cantidades': [2,1, 0.5]
+    },
+    {
+        'texto': 'Lechuga y Tomate',
+        'cantidades': [1,1, 0.5]
+    },
+    {
+        'texto': 'Pan',
+        'cantidades': [1,0.5, 0.5]
+    },
+    {
+        'texto': 'Vino',
+        'cantidades': [1,1, 0.5]
+    },
+    {
+        'texto': 'Gaseosa o Agua',
+        'cantidades': [1,1, 0.5]
+    },
+    {
+        'texto': 'Carbon',
         'cantidades': [2,1, 0.5]
     },
 ];
