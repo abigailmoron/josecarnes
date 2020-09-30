@@ -8,72 +8,54 @@ $(document).ready(function(){
 
 let productos = [
     {
-        'texto': 'Corte Americano',
-        'cantidades': [1,0.5, 0.5]
-    },
-    {
-        'texto': 'Costilla Comun',
-        'cantidades': [1,0.5, 0.5]
-    },
-    {
-        'texto': 'Costilla Palomita',
-        'cantidades': [1,0.5, 0.5]
-    },
-    {
-        'texto': 'Entraña',
-        'cantidades': [3,2, 1]
-    },
-    {
-        'texto': 'Marucha',
-        'cantidades': [3,2.5, 1.5]
-    },
-    {
-        'texto': 'Matambre',
-        'cantidades': [2,1, 0.5]
-    },
-    {
-        'texto': 'Tapa de Asado',
-        'cantidades': [2,1, 0.5]
-    },
-    {
-        'texto': 'Tapa de Nalga',
-        'cantidades': [2,1, 0.5]
+        'texto': 'Costilla',
+        'cantidades': [0.2,0.2, 0.1],
+        'unidad': 'Kg',
     },
     {
         'texto': 'Vacio',
-        'cantidades': [2,1, 0.5]
+        'cantidades': [0.2,0.2, 0.1],
+        'unidad': 'Kg',
     },
     {
         'texto': 'Chorizo',
-        'cantidades': [1,0.5, 0.5]
+        'cantidades': [0.1,0.1, 0.1],
+        'unidad': 'Kg',
     },
     {
         'texto': 'Morcilla',
-        'cantidades': [1,0.5, 0.5]
+        'cantidades': [0.1,0.1, 0.1],
+        'unidad': 'Kg',
     },
     {
-        'texto': 'Achuras',
-        'cantidades': [2,1, 0.5]
+        'texto': 'Pollo',
+        'cantidades': [0.2,0.2, 0.1],
+        'unidad': 'Kg',
     },
     {
         'texto': 'Lechuga y Tomate',
-        'cantidades': [1,1, 0.5]
+        'cantidades': [0.2,0.2, 0.2],
+        'unidad': 'Kg',
     },
     {
         'texto': 'Pan',
-        'cantidades': [1,0.5, 0.5]
+        'cantidades': [0.2,0.2, 0.1],
+        'unidad': 'Kg',
     },
     {
         'texto': 'Vino',
-        'cantidades': [1,1, 0.5]
+        'cantidades': [0.5,0.5, 0],
+        'unidad': 'Lt',
     },
     {
         'texto': 'Gaseosa o Agua',
-        'cantidades': [1,1, 0.5]
+        'cantidades': [0.5,0.5, 0.5],
+        'unidad': 'Lt',
     },
     {
         'texto': 'Carbon',
-        'cantidades': [2,1, 0.5]
+        'cantidades': [0.5,0.5, 0.5],
+        'unidad': 'Kg',
     },
 ];
 
@@ -82,7 +64,6 @@ function calcular(){
     hombres = $('#calculadorAsado input[name="hombres"]').val();
     mujeres = $('#calculadorAsado input[name="mujeres"]').val();
     menores = $('#calculadorAsado input[name="menores"]').val();
-
 
     if (!hombres) {
         hombres = 0;
@@ -97,11 +78,14 @@ function calcular(){
     items.html('');
 
     productos.forEach(element => {
-        var cant = element['cantidades'][0]*hombres + element['cantidades'][1]*mujeres + element['cantidades'][2]*menores;
+
+        var cantidad = element['cantidades'][0]*hombres + element['cantidades'][1]*mujeres + element['cantidades'][2]*menores;
+        var cant = Number(cantidad.toFixed(10).slice(0, 3));
         var texto = element['texto'];
+        var unidad = element['unidad'];
 
         var item = '<div class="col-md-6 px-3 mb-md-3 border-bottom">';
-        item += '<h5><span class="font-weight-bold">'+ cant + ' Kg</span>&nbsp;'+ texto + '</h5>';
+        item += '<h5><span class="font-weight-bold">'+ cant + ' '+ unidad +'</span>&nbsp;'+ texto + '</h5>';
         item += '</div>';
 
         items.append(item);
