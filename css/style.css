@@ -33,3 +33,11 @@ body{
     bottom: 20px;
     right: 20px;
 }
+
+.btn-whatsapp .btn{
+    background: #fff;
+}
+
+.btn-whatsapp .btn:hover{
+    background: #28a745;
+}

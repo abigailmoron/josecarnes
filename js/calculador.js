@@ -13,7 +13,17 @@ let productos = [
         'unidad': 'Kg',
     },
     {
+        'texto': 'Lechuga y Tomate',
+        'cantidades': [0.2,0.2, 0.2],
+        'unidad': 'Kg',
+    },
+    {
         'texto': 'Vacio',
+        'cantidades': [0.2,0.2, 0.1],
+        'unidad': 'Kg',
+    },
+    {
+        'texto': 'Pan',
         'cantidades': [0.2,0.2, 0.1],
         'unidad': 'Kg',
     },
@@ -23,23 +33,13 @@ let productos = [
         'unidad': 'Kg',
     },
     {
+        'texto': 'Gaseosa o Agua',
+        'cantidades': [0.5,0.5, 0.5],
+        'unidad': 'Lt',
+    },
+    {
         'texto': 'Morcilla',
         'cantidades': [0.1,0.1, 0.1],
-        'unidad': 'Kg',
-    },
-    {
-        'texto': 'Pollo',
-        'cantidades': [0.2,0.2, 0.1],
-        'unidad': 'Kg',
-    },
-    {
-        'texto': 'Lechuga y Tomate',
-        'cantidades': [0.2,0.2, 0.2],
-        'unidad': 'Kg',
-    },
-    {
-        'texto': 'Pan',
-        'cantidades': [0.2,0.2, 0.1],
         'unidad': 'Kg',
     },
     {
@@ -48,9 +48,9 @@ let productos = [
         'unidad': 'Lt',
     },
     {
-        'texto': 'Gaseosa o Agua',
-        'cantidades': [0.5,0.5, 0.5],
-        'unidad': 'Lt',
+        'texto': 'Pollo',
+        'cantidades': [0.2,0.2, 0.1],
+        'unidad': 'Kg',
     },
     {
         'texto': 'Carbon',
